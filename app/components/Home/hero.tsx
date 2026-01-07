@@ -16,7 +16,7 @@ const HeroSection = () => {
           height={423}
           className="absolute grayscale left-20 -top-20"
         />
-        <div className="relative w-2/3 ml-40 z-50">
+        <div className="relative w-2/3 ml-40 z-10">
           <div className="text-primary italic">Friday Sale, 50%</div>
           <h1 className="text-[95px] font-extrabold italic bg-linear-to-b from-black to-[#CBCBCB] bg-clip-text text-transparent leading-tight">
             WEAR YOUR <br /> TOP-QUALITY <br /> SPORTSWEAR
