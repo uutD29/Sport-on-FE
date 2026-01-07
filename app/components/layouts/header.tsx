@@ -4,10 +4,9 @@ import { FiSearch, FiShoppingBag } from "react-icons/fi";
 
 const Header = () => {
   return (
-    <header>
-      <div className="container mx-auto px-4 py-5 md:py-7 flex flex-wrap items-center justify-between gap-6 md:gap-10">
+    <header className="bg-white sticky top-0 z-50">
+      <div className="container mx-auto flex flex-wrap items-center justify-between gap-6 md:gap-10 px-4 py-5 md:py-7">
 
-        {/* Logo */}
         <Image
           src="/images/logo.svg"
           alt="sporton logo"
@@ -16,11 +15,10 @@ const Header = () => {
           className="shrink-0"
         />
 
-        {/* Nav */}
-        <nav className="order-3 md:order-2 w-full md:w-auto flex justify-center md:justify-start gap-6 md:gap-24 font-medium">
+        <nav className="w-full md:w-auto order-3 md:order-2 flex justify-center md:justify-start gap-6 md:gap-24 font-medium">
           <Link
             href="#"
-            className="relative after:content-[''] after:block after:bg-primary after:rounded-full after:h-[3px] after:w-1/2 after:absolute after:left-1/2 after:-translate-x-1/2 after:translate-y-1"
+            className="relative after:absolute after:left-1/2 after:block after:h-[3px] after:w-1/2 after:-translate-x-1/2 after:translate-y-1 after:rounded-full after:bg-primary after:content-['']"
           >
             Home
           </Link>
@@ -28,12 +26,11 @@ const Header = () => {
           <Link href="#">Explore Products</Link>
         </nav>
 
-        {/* Actions */}
-        <div className="order-2 md:order-3 flex gap-6 md:gap-10 items-center">
+        <div className="order-2 md:order-3 flex items-center gap-6 md:gap-10">
           <FiSearch size={24} />
           <div className="relative">
             <FiShoppingBag size={24} />
-            <div className="bg-primary rounded-full w-3.5 h-3.5 absolute -top-1 -right-1 text-[10px] text-white text-center leading-3.5">
+            <div className="absolute -top-1 -right-1 flex h-3.5 w-3.5 items-center justify-center rounded-full bg-primary text-[10px] leading-3.5 text-white">
               3
             </div>
           </div>
