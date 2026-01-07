@@ -4,42 +4,12 @@ import Button from "../ui/button";
 import { FiPlus } from "react-icons/fi";
 
 const productList = [
-  {
-    name: "SportsOn Product 1",
-    category: "Running",
-    price: 450000,
-    imgUrl: "product-1.png",
-  },
-  {
-    name: "SportsOn Product 2",
-    category: "Running",
-    price: 250000,
-    imgUrl: "product-1.png",
-  },
-  {
-    name: "SportsOn Product 3",
-    category: "Running",
-    price: 230000,
-    imgUrl: "product-3.png",
-  },
-  {
-    name: "SportsOn Product 4",
-    category: "Running",
-    price: 440000,
-    imgUrl: "product-4.png",
-  },
-  {
-    name: "SportsOn Product 5",
-    category: "Running",
-    price: 550000,
-    imgUrl: "product-5.png",
-  },
-  {
-    name: "SportsOn Product 6",
-    category: "Running",
-    price: 650000,
-    imgUrl: "product-6.png",
-  },
+  { name: "SportsOn Slowlivin", category: "Running", price: 119000, imgUrl: "product-1.png" },
+  { name: "SportsOn Rockets Tennis", category: "Tennis", price: 990000, imgUrl: "product-2.png" },
+  { name: "SportsOn Hyperfast Shoes", category: "Running", price: 329000, imgUrl: "product-3.png" },
+  { name: "SportsOn HyperSoccer v2", category: "Football", price: 458000, imgUrl: "product-4.png" },
+  { name: "SportsOn Slowlivin", category: "Running", price: 119000, imgUrl: "product-5.png" },
+  { name: "SportsOn Basketball", category: "Running", price: 200000, imgUrl: "product-6.png" },
 ];
 
 const ProductsSection = () => {
