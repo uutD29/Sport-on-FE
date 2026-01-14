@@ -1,14 +1,21 @@
 import Image from "next/image";
 import HeroSection from "../components/Home/hero";
 import CategoriesSection from "../components/Home/categories";
-import Products from "../components/Home/products";
+import { getAllCategories } from "../services/category.service";
+import ProductsSection from "../components/Home/products";
+import { getAllProducts } from "../services/product.service";
 
-export default function Home() {
+export default async function Home() {
+  const [categories, products] = await Promise.all([
+    getAllCategories(),
+    getAllProducts(),
+  ]);
+
   return (
-<main>
-  <HeroSection />
-  <CategoriesSection />
-  <Products/>
-</main>
+    <main>
+      <HeroSection />
+      <CategoriesSection categories={categories} />
+      <ProductsSection products={products} />
+    </main>
   );
 }
