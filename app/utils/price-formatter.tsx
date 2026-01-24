@@ -1,11 +1,11 @@
 const priceFormatter = (price: number) => {
-    const newFormatter = Intl.NumberFormat("id-ID", {
-        style: "currency",
-        currency: "IDR",
-        maximumSignificantDigits: 3,
-    });
-    return newFormatter.format(price);
+  const newFormat = Intl.NumberFormat("id-ID", {
+    style: "currency",
+    currency: "IDR",
+    maximumSignificantDigits: 3,
+  }).format(price);
 
-}
+  return newFormat;
+};
 
 export default priceFormatter;
