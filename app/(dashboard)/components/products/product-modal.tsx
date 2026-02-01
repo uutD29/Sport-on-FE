@@ -82,7 +82,6 @@ const ProductModal = ({
         await createProduct(data);
       }
 
-      // Reset Form Data
       setFormData({
         name: "",
         price: 0,
