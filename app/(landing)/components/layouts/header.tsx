@@ -29,6 +29,8 @@ const Header = () => {
           >
             Home
           </Link>
+          <Link href="#">Category</Link>
+          <Link href="#">Explore Products</Link>
         </nav>
         <div className="relative flex gap-10">
           <FiSearch size={24} />
