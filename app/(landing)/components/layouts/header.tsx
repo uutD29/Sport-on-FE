@@ -30,7 +30,7 @@ const Header = () => {
             Home
           </Link>
           <Link href="#category-section">Category</Link>
-          <Link href="#products-sectioin">Explore Products</Link>
+          <Link href="#products-section">Explore Products</Link>
         </nav>
         <div className="relative flex gap-10">
           <FiSearch size={24} />
