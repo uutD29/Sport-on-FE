@@ -23,14 +23,9 @@ const Header = () => {
           />
         </Link>
         <nav className="flex gap-24 font-medium">
-          <Link
-            href="#hero-section"
-            className="relative after:content-[''] after:block after:bg-primary after:rounded-full after:h-[3px] after:w-1/2 after:absolute after:left-1/2 after:-translate-x-1/2 after:translate-y-1"
-          >
-            Home
-          </Link>
-          <Link href="#category-section">Category</Link>
-          <Link href="#products-section">Explore Products</Link>
+          <Link href="#hero-section" className="transition-colors hover:text-primary">Home</Link>
+          <Link href="#category-section" className="transition-colors hover:text-primary>Category</Link>
+          <Link href="#products-section" className="transition-colors hover:text-primary>Explore Products</Link>
         </nav>
         <div className="relative flex gap-10">
           <FiSearch size={24} />
